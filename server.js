@@ -105,7 +105,7 @@ app.get('/saved', function(req, res) {
 
 // GET for getting all articles from DB
 app.get('/articles', function(req, res) {
-  db.article
+  db.Article
     .find({})
     .then(function(dbArticle) {
       res.json(dbArticle);
