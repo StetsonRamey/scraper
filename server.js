@@ -32,9 +32,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // Connect to the Mongo DB
-// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
+// If deployed, use the deployed database. Otherwise use the local mongoRecode database
+var URI = 'mongodb://heroku_hvhpwj06:@ds135810.mlab.com:35810/heroku_hvhpwj06';
+
 var MONGODB_URI =
-  process.env.MONGODB_URI || 'mongodb://localhost/mongoRecodeScrape';
+  process.env.URI || 'mongodb://localhost/mongoRecodeScrape';
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
