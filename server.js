@@ -33,7 +33,7 @@ app.use(express.static('public'));
 
 // Connect to the Mongo DB
 // If deployed, use the deployed database. Otherwise use the local mongoRecode database
-var URI = 'mongodb://heroku_hvhpwj06:@ds135810.mlab.com:35810/heroku_hvhpwj06';
+var URI = 'mongodb://heroku_hvhpwj06:fm06uag73m6jp2tu839k2c0dc2@ds135810.mlab.com:35810/heroku_hvhpwj06';
 
 var MONGODB_URI =
   process.env.URI || 'mongodb://localhost/mongoRecodeScrape';
