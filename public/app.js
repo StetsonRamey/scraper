@@ -8,14 +8,13 @@ $.getJSON('/articles', function(data) {
     for (let i = 0; i < data.length; i++) {
       $('#article-container').append(
         '<div class="card" data-id=' + data[i]._id + '>' +
-          '<div class="card-header">Featured</div>' +
+          '<div class="card-header">' + data[i].headline + '</div>' +
           '<div class="card-body">' +
-            '<h5 class="card-title">Special title treatment</h5>' +
             '<p class="card-text">' +
-              'With supporting text below as a natural lead-in to additional content.' +
+              data[i].summary +
             '</p>' +
             '<a href="#" class="btn btn-primary">' +
-              'Go somewhere' +
+              'Save Article' +
             '</a>' +
           '</div>' +
         '</div>'
