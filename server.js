@@ -36,7 +36,7 @@ app.use(express.static('public'));
 var URI = 'mongodb://heroku_hvhpwj06:fm06uag73m6jp2tu839k2c0dc2@ds135810.mlab.com:35810/heroku_hvhpwj06';
 
 var MONGODB_URI =
-  process.env.URI || 'mongodb://localhost/mongoRecodeScrape';
+  URI || 'mongodb://localhost/mongoRecodeScrape';
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
