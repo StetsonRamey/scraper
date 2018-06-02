@@ -104,9 +104,7 @@ app.get('/scrape', function(req, res) {
 app.get('/saved', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/saved.html'));
 });
-app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '/public/index.html'));
-});
+
 
 // GET for getting all articles from DB
 app.get('/articles', function(req, res) {
